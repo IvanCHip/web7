@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">ОН ПОД ЗАЩИТОЙ</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">АлгоПедия</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Поиск">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Поиск</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Зарегистрироваться</a>
+      </div>
+    </div>
+  </header>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-3 fst-italic">Алгоритмика:</h1>
+      <p class="lead my-3">международная школа математики и программирования. Она обучает детей программированию и математике в офлайн и онлайн форматах. Занятия проходят на интерактивной ИТ-платформе (собственной разработке компании), а материалы курсов переведены на 11 языков. Контроль образовательных результаты и качества работы преподавателей обеспечивается за счет анализа больших данных.</p>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Чему Учат?
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">За год обучения в Алгоритмике дети познакомятся с</h2>
+         <ul>
+          <li>Компьютерной грамотностью</li>
+          <li>Работой с документами</li>
+          <li>Безопасностью в интернете</li>
+             <li>Цифровым творчеством</li>
+        </ul>
+        <hr>
+        <p>Обучение проходит в игровой форме с индивидуальным подходом к каждому ребенку. Для большего удобства  разработана специальная онлайн-платформа, которая облегчит ребенку обучение и позволит ему бывать на занятиях тогда, когда это будет наиболее удобно. </p>
+          <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Цель программы</h2>
+        <ul>
+          <li>Подготовить детей справляться с любыми задачами</li>
+          <li>Научиться применять знания на практике</li>
+          <li>Создать неподдельный интерес к учебе</li>
+        </ul>
+      </article>
+
+        <h3>Выбирайте подходящий курс</h3>
+        <p>Здесь много курсов и выбирай который более сильно подходит к тебе:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Название курса</th>
+              <th>Возраст</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Компьютерная грамотность
+              </td>
+              <td>7-9 лет</td>
+            </tr>
+            <tr>
+              <td>Визуальное программирование</td>
+              <td>9-10 лет</td>
+            </tr>
+            <tr>
+              <td>Видеоблогинг</td>
+              <td>9-14 лет</td>
+            </tr>
+            <tr>
+                <td>Графический дизайн</td>
+                <td>9-14 лет</td>
+            </tr>
+            <tr>
+                <td>Геймдизайн</td>
+                <td>10-11 лет</td>
+            </tr>
+            <tr>
+                <td>Создание веб-сайтов</td>
+                <td>11-12 лет</td>
+            </tr>
+            <tr>
+                <td>Разработка игр на Unity</td>
+                <td>12-14 лет</td>
+            </tr>
+            <tr>
+                <td>Python Start</td>
+                <td>12-13 лет</td>
+            </tr>
+            <tr>
+                <td>Python Pro</td>
+                <td>14-17 лет</td>
+            </tr>
+            <tr>
+                <td>Мастерская Ай Ти</td>
+                <td>7-12 лет</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>В этой школе работают преподаватели, которые по настоящему интересуются сферой IT, следят за инновациями и готовы профессионально помогать детям в изучении новой информации.</p>
+      </article>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">Алгоритмика:</h4>
+          <p class="mb-0">Лучшая школа програмирования и  математики</p>
+        </div>
+        <div class="p-4">
+          <h4 class="fst-italic">Где меня можно найти?</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/IvanCHip">GitHub</a></li>
+            <li><a href="https://vk.com/ivanchiplikov">Вконтакте</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p>Выполнил <a href="https://vk.com/ivanchiplikov">Чипликов Иван</a> из <a>Python Pro</a></p>
+  <p>
+    <a href="#">Вернуться вверх</a>
+  </p>
+</footer>
+
+<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div><div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div><div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+
+ </body>
+</html>
